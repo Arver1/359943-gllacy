@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
   </head>
   <body>
+    <input type="radio" name="toggle" id="btn_1">
+    <input type="radio" name="toggle" id="btn_2">
+    <input type="radio" name="toggle" id="btn_3">
     <header class="page_header">
       <div class="container">
         <div class="index_logo">
-          <a href="index.html"><img src="#" alt="GllacyShop"></a>
+          <a><img src="img/logo.png" width="154" height="64" alt="GllacyShop"></a>
         </div>
         <nav class="main_navigation">
           <ul class="main_menu">
@@ -97,9 +102,9 @@
           <h1>Пломбир с помадкой и клубничный щербет</h1>
         </div>
         <div class="slide_controls">
-          <label for="slide_1">1</label>
-          <label for="slide_2">2</label>
-          <label for="slide_3">3</label>
+          <label for="btn_1">1</label>
+          <label for="btn_2">2</label>
+          <label for="btn_3">3</label>
         </div>
         <a class="add_both" href="#">Давайте оба!</a>
       </div>
@@ -121,10 +126,10 @@
         <section class="hits">
           <div class="product_item">
             <div class="hits_img_hit">
-              <img src="#" alt="Хит">
+              <img src="img/hit_badge.png" width="61" height="61" alt="Хит">
             </div>
             <div class="img_product">
-              <a href="#"><img src="#" alt="Изображение мороженого"></a>
+              <a href="#"><img src="img/product_1.png" width="267" height="267" alt="Изображение мороженого"></a>
             </div>
             <div class="product_price">
               <span class="item_price">310</span>
@@ -138,10 +143,10 @@
           </div>
           <div class="product_item">
             <div class="hits_img_hit">
-              <img src="#" alt="Хит">
+              <img src="img/hit_badge.png" width="61" height="61"  alt="Хит">
             </div>
             <div class="img_product">
-              <a href="#"><img src="#" alt="Изображение мороженого"></a>
+              <a href="#"><img src="img/product_2.png" width="267" height="267" alt="Изображение мороженого"></a>
             </div>
             <div class="product_price">
               <span class="item_price">380</span>
@@ -155,10 +160,10 @@
           </div>
           <div class="product_item">
             <div class="hits_img_hit">
-              <img src="#" alt="Хит">
+              <img src="img/hit_badge.png" width="61" height="61" alt="Хит">
             </div>
             <div class="img_product">
-              <a href="#"><img src="#" alt="Изображение мороженого"></a>
+              <a href="#"><img src="img/product_3.png" width="267" height="267" alt="Изображение мороженого"></a>
             </div>
             <div class="product_price">
               <span class="item_price">355</span>
@@ -172,10 +177,10 @@
           </div>
           <div class="product_item">
             <div class="hits_img_hit">
-              <img src="#" alt="Хит">
+              <img src="img/hit_badge.png" width="61" height="61" alt="Хит">
             </div>
             <div class="img_product">
-              <a href="#"><img src="#" alt="Изображение мороженого"></a>
+              <a href="#"><img src="img/product_4.png" width="267" height="267" alt="Изображение мороженого"></a>
             </div>
             <div class="product_price">
               <span class="item_price">415</span>
@@ -209,12 +214,14 @@
             </h2>
           </div>
           <div class="subscription">
+            <div class="subscription_substrate">
             <p class="subscription_text">Подпишись на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит.Обещаем не спамить и не слать всякой ненужной ерунды.Честно=)</p>
             <form action="https://echo.htmlacademy.ru" method="get">
               <input type="text" name="subscription_e-mail" value="Электронная почта" id="e-mail_id">
               <label for="e-mail_id">Электронная почта</label>
               <input type="submit">
             </form>
+            </div>
           </div>
         </div>
         <section class="map">

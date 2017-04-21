@@ -1,0 +1,65 @@
+  h1  {
+    font-size: 60px;
+    line-height: 60.35px;
+    font-weight: bold;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #ffffff;
+  }
+  h2  {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #323232;
+  }
+ /*селекторы для тегов a и body были заданы временно для удобства*/
+  a  {
+    color: #ffffff;
+  }
+  body  {
+  background-color: #849d8f;
+  }
+  .action_item:first-child  {
+  width: 560px;
+  height: 229px;
+  color: #ffffff;
+  border-radius: 15px;
+  background-image: url("../img/action_banner_1.jpg");
+  }
+  .action_item:last-child  {
+  width: 560px;
+  height: 229px;
+  color: #ffffff;
+  border-radius: 15px;
+  background-image: url("../img/action_banner_2.jpg");
+  }
+  .features_container  {
+  background: url("../img/wafer.png") no-repeat;
+  width: 1146px;
+  height: 306px;
+  }
+  .news  {
+  background: url("../img/news_banner.png") no-repeat;
+  width: 560px;
+  height: 220px;
+  }
+  .subscription  {
+  background: #ffffff url("../img/pattern_item.png");
+  width: 560px;
+  height: 220px;
+  padding: 6px;
+  }
+  .subscription_substrate  {
+  background-color: #f8f7f4;
+  height: 208px;
+  width: 548px;
+  }
+  .map  {
+  background: url("../img/map.png");
+  }
+
+
+
+
+
+
