@@ -1,62 +1,282 @@
+  body  {
+    min-width: 1200px;
+    min-height: 2416px;
+    margin: 0;
+    padding: 0;
+  }
+  a,body  {
+    font-family: "Roboto","Arial",sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
   h1  {
     font-size: 60px;
     line-height: 60.35px;
     font-weight: bold;
-    font-family: "Roboto","Arial",sans-serif;
+    font-family: inherit;
     color: #ffffff;
   }
   h2  {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
-    font-family: "Roboto","Arial",sans-serif;
+    font-family: inherit;
     color: #323232;
   }
- /*селекторы для тегов a и body были заданы временно для удобства*/
-  a  {
+  .clearfix  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .page_wrapper  {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #849d8f;
+    border: 1px dashed green; /*временно*/
+    padding: 9px 0 25px;
+  }
+  .container  {
+    width: 1146px;
+    margin: 0 auto;
+    border: 1px dashed green; /*временно*/
+  }
+  .index_logo,user_area  {
+    min-height: 103px;
+  }
+  .index_logo  {
+    width: 176px;  /*из-за рамки -2px*/
+    float: left;
+    border: 1px dashed blue; /*временно*/
+  }
+  .main_navigation  {
+    width: 404px; /*из-за рамки -2px*/
+    float: left;
+    border: 1px dashed red; /*временно*/
     color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 18px;
   }
-  body  {
-  background-color: #849d8f;
+  .main_navigation a  {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
   }
-  .action_item:first-child  {
-  width: 560px;
-  height: 229px;
-  color: #ffffff;
-  border-radius: 15px;
-  background-image: url("../img/action_banner_1.jpg");
+  .main_menu  {
+    padding: 0px;
   }
-  .action_item:last-child  {
-  width: 560px;
-  height: 229px;
-  color: #ffffff;
-  border-radius: 15px;
-  background-image: url("../img/action_banner_2.jpg");
+  .main_menu_item  {
+    list-style-type: none;
+    float: left;
+  }
+  .main_menu_item:nth-of-type(1)  {
+    margin-right: 27px;
+  }
+  .main_menu_item:nth-of-type(2)  {
+    margin-right: 30px;
+  }
+  .user_area  {
+    width: 267px;
+    min-height: 103px;
+    float: right;
+    padding-top: 14px;
+    color: #ffffff;
+    border: 1px dashed blue; /*временно*/
+  }
+  .action,.hits,.features,.news_and_subscription  {
+    margin-bottom: 40px;
+  }
+  .action_item  {
+    width: 560px;
+    height: 229px;
+    border-radius: 15px;
+    outline: 1px dashed yellow; /*временно*/
+  }
+  .action_item:nth-of-type(1)  {
+    float: left;
+    background-image: url("../img/action_banner_1.jpg");
+  }
+  .action_item:nth-of-type(2)  {
+    float: right;
+    background-image: url("../img/action_banner_2.jpg");
+  }
+  .action::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .hits  {
+    font-size: 0px;
+  }
+  .product_item  {
+    display: inline-block;
+    width: 267px;
+    margin-right: 26px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    outline: 1px dashed #ffffff;
+  }
+  .product_item:nth-of-type(4)  {
+    margin-right: 0px;
+  }
+  .hit::before  {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/hit_badge.png");
   }
   .features_container  {
-  background: url("../img/wafer.png") no-repeat;
-  width: 1146px;
-  height: 306px;
+    background: url("../img/wafer.png");
+    height: 306px;
+    outline: 1px dashed blue; /*временно*/
   }
-  .news  {
-  background: url("../img/news_banner.png") no-repeat;
-  width: 560px;
-  height: 220px;
+  .news {
+    width: 560px;
+    height: 220px;
+    float: left;
+    outline: 1px dashed blue;
+    background: url("../img/news_banner.png") no-repeat;
+    color: #323232
+  }
+  .subscription_text  {
+    margin: 0;
+    color: #323232
   }
   .subscription  {
-  background: #ffffff url("../img/pattern_item.png");
-  width: 560px;
-  height: 220px;
-  padding: 6px;
+    width: 554px;
+    height: 214px;
+    float: right;
+    background: #ffffff url("../img/pattern_item.png");
+    outline: 1px dashed blue;
+    border-radius: 10px;
+    padding-top: 6px;
+    padding-left: 6px;
   }
   .subscription_substrate  {
-  background-color: #f8f7f4;
-  height: 208px;
-  width: 548px;
+    background-color: #f8f7f4;
+    height: 208px;
+    width: 548px;
+    border-radius: 10px;
   }
+  .news_and_subscription::after  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*временно*/
+  .news_link  {
+    color: #323232
+  }
+  /**/
   .map  {
-  background: url("../img/map.png");
+    background: url("../img/map.png");
+    height: 430px;
   }
+  .map .container  {
+    height: 430px;
+  }
+  footer  {
+    margin-top: 20px;
+    border:1px dashed red; /*временно*/
+  }
+  .footer_contacts  {
+    width: 265px; /*из-за рамки -2px*/
+    min-height: 58px;
+    float: left;
+    margin-right: 26px;
+    border:1px dashed blue; /*временно*/
+    font-size: 14px; /*временно*/
+  }
+  .footer_nav  {
+    width: 558px; /*из-за рамки -2px*/
+    min-height: 58px;
+    float: left;
+    margin-right: 26px;
+    border:1px dashed yellow; /*временно*/
+  }
+  .footer_copyright{
+    width: 265px; /*из-за рамки -2px*/
+    min-height: 58px;
+    float: right;
+    border:1px dashed blue; /*временно*/
+  }
+  footer::after  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*временно,как пройду "Декоративные элементы" переделаю через position*/
+  .user_area_item  {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+  .contact  {
+    width: 267px;
+    float: right;
+  }
+  .time_work  {
+    display: inline-block;
+    width: 267px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .telephone  {
+    display: inline-block;
+    width: 267px;
+    text-align: right;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .slide h1  {
+    width: 794px;
+    margin-top: 295px;
+    margin-left: 176px;
+    margin-right: 176px;
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    line-height: 60.35px;
+  }
+  .slide:first-of-type  {
+    max-height: 638px;
+    background: url("../img/background_ice_cream_1.png") no-repeat;
+    border: 2px dashed #ffffff;
+  }
+  /*временно*/
+  /*hover item disable */
+  .slider_toggle  {
+    display: none;
+  }
+  .dropdown_menu  {
+    display: none;
+  }
+  .search_request  {
+    display: none;
+  }
+  .login_form  {
+    display: none;
+  }
+  .basket_item  {
+    display: none;
+
+  }
+  .slide:nth-child(2),.slide:nth-child(3)  {
+    display: none;
+  }
+  .product_link_btn  {
+    display: none;
+  }
+  /*hover item disable */
+
+
 
 
 

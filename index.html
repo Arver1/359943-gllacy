@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
-    <input type="radio" name="toggle" id="btn_1">
-    <input type="radio" name="toggle" id="btn_2">
-    <input type="radio" name="toggle" id="btn_3">
+    <input class="slider_toggle" type="radio" name="toggle" id="btn_1">
+    <input class="slider_toggle" type="radio" name="toggle" id="btn_2">
+    <input class="slider_toggle" type="radio" name="toggle" id="btn_3">
+    <div class="page_wrapper">
     <header class="page_header">
       <div class="container">
         <div class="index_logo">
@@ -46,23 +48,23 @@
           </ul>
         </nav>
         <div class="user_area">
-          <div class="search">
+          <div class="user_area_item search">
             <a class="search_link" href="#">Поиск</a>
             <form action="https://echo.htmlacademy.ru" method="get">
-              <input type="text" placeholder="Что ищем?" name="search_request">
+              <input class="search_request" type="text" placeholder="Что ищем?" name="search_request">
             </form>
           </div>
-          <div class="login">
+          <div class="user_area_item login">
             <a class="login_link" href="#">Вход</a>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" placeholder="Электронная почта" name="e-mail">
-              <input type="password" placeholder="Пароль" name="password">
-              <input type="submit" class="login_btn btn" name="login" value="Войти">
-              <a class="login_form_link" href="#">Забыли пароль?</a>
-              <a class="login_form_link" href="#">Новая регистрация</a>
+              <input class="login_form" type="text" placeholder="Электронная почта" name="e-mail">
+              <input class="login_form" type="password" placeholder="Пароль" name="password">
+              <input class="login_form" type="submit" class="login_btn btn" name="login" value="Войти">
+              <a class="login_form login_form_link" href="#">Забыли пароль?</a>
+              <a class="login_form login_form_link" href="#">Новая регистрация</a>
             </form>
           </div>
-          <div class="basket">
+          <div class="user_area_item basket">
             <a class="basket_link" href="#">Корзина</a>
             <div class="basket_item">
               <div class="basket_container_top">
@@ -85,28 +87,28 @@
               </div>
             </div>
           </div>
+          <div class="contact">
+            <span class="time_work">С 10 до 20, ежедневно</span>
+            <span class="telephone">8 812 450-25-25</span>
+          </div>
         </div>
-        <div class="contact">
-          <span class="time_work">С 10 до 20, ежедневно</span>
-          <span class="telephone">8 812 450-25-25</span>
+        <div class="slider">
+          <div class="slide" id="slide_1">
+            <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+          </div>
+          <div class="slide" id="slide_2">
+            <h1>Шоколадный пломбир и лимонный сорбет</h1>
+          </div>
+          <div class="slide" id="slide_3">
+            <h1>Пломбир с помадкой и клубничный щербет</h1>
+          </div>
+          <div class="slide_controls">
+            <label for="btn_1">1</label>
+            <label for="btn_2">2</label>
+            <label for="btn_3">3</label>
+          </div>
+          <a class="add_both" href="#">Давайте оба!</a>
         </div>
-      </div>
-      <div class="slider">
-        <div class="slide" id="slide_1">
-          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-        </div>
-        <div class="slide" id="slide_2">
-          <h1>Шоколадный пломбир и лимонный сорбет</h1>
-        </div>
-        <div class="slide" id="slide_3">
-          <h1>Пломбир с помадкой и клубничный щербет</h1>
-        </div>
-        <div class="slide_controls">
-          <label for="btn_1">1</label>
-          <label for="btn_2">2</label>
-          <label for="btn_3">3</label>
-        </div>
-        <a class="add_both" href="#">Давайте оба!</a>
       </div>
     </header>
     <main class="page_main">
@@ -124,10 +126,7 @@
           </div>
         </section>
         <section class="hits">
-          <div class="product_item">
-            <div class="hits_img_hit">
-              <img src="img/hit_badge.png" width="61" height="61" alt="Хит">
-            </div>
+          <div class="product_item hit">
             <div class="img_product">
               <a href="#"><img src="img/product_1.png" width="267" height="267" alt="Изображение мороженого"></a>
             </div>
@@ -141,10 +140,7 @@
             </div>
             <a class="product_link_btn" href="#">Быстрый просмотр</a>
           </div>
-          <div class="product_item">
-            <div class="hits_img_hit">
-              <img src="img/hit_badge.png" width="61" height="61"  alt="Хит">
-            </div>
+          <div class="product_item hit">
             <div class="img_product">
               <a href="#"><img src="img/product_2.png" width="267" height="267" alt="Изображение мороженого"></a>
             </div>
@@ -158,10 +154,7 @@
             </div>
             <a class="product_link_btn" href="#">Быстрый просмотр</a>
           </div>
-          <div class="product_item">
-            <div class="hits_img_hit">
-              <img src="img/hit_badge.png" width="61" height="61" alt="Хит">
-            </div>
+          <div class="product_item hit">
             <div class="img_product">
               <a href="#"><img src="img/product_3.png" width="267" height="267" alt="Изображение мороженого"></a>
             </div>
@@ -175,10 +168,7 @@
             </div>
             <a class="product_link_btn" href="#">Быстрый просмотр</a>
           </div>
-          <div class="product_item">
-            <div class="hits_img_hit">
-              <img src="img/hit_badge.png" width="61" height="61" alt="Хит">
-            </div>
+          <div class="product_item hit">
             <div class="img_product">
               <a href="#"><img src="img/product_4.png" width="267" height="267" alt="Изображение мороженого"></a>
             </div>
@@ -224,17 +214,19 @@
             </div>
           </div>
         </div>
-        <section class="map">
+      </div>
+      <section class="map">
+        <div class="container">
           <div class="map_pin">
           </div>
           <div class="feedback">
-          Адрес главного офиса<br>
-          и офлайн магазина:
-          <span class="feedback_contact">ул.Большая Конюшенная 19/8,Санкт-Петербург</span>
-          Для заказов по телефону:
-          <span class="feedback_contact">8 812 450-25-25</span>
-          (c 10 до 20 ежедневно)
-          <a class="btn_feedback" href="#">Форма обратной связи</a>
+            Адрес главного офиса<br>
+            и офлайн магазина:
+            <span class="feedback_contact">ул.Большая Конюшенная 19/8,Санкт-Петербург</span>
+              Для заказов по телефону:
+            <span class="feedback_contact">8 812 450-25-25</span>
+              (c 10 до 20 ежедневно)
+            <a class="btn_feedback" href="#">Форма обратной связи</a>
           </div>
           <div class="feedback_form">
             <form action="https://echo.htmlacademy.ru" method="post">
@@ -244,8 +236,8 @@
               <input type="submit">
             </form>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
@@ -267,6 +259,7 @@
         </section>
       </div>
     </footer>
+    </div>
   </body>
 </html>
 
