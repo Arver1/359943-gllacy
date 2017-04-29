@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
+     <div class="catalog_wrapper">
     <header class="page_header">
       <div class="container">
         <div class="index_logo">
-          <a href="index.html"><img src="img/logo.png" alt="GllacyShop"></a>
+          <a><img src="img/logo.png" width="154" height="64" alt="GllacyShop"></a>
         </div>
         <nav class="main_navigation">
           <ul class="main_menu">
@@ -43,23 +45,23 @@
           </ul>
         </nav>
         <div class="user_area">
-          <div class="search">
+          <div class="user_area_item search">
             <a class="search_link" href="#">Поиск</a>
             <form action="https://echo.htmlacademy.ru" method="get">
-              <input type="text" placeholder="Что ищем?" name="search_request">
+              <input class="search_request" type="text" placeholder="Что ищем?" name="search_request">
             </form>
           </div>
-          <div class="login">
+          <div class="user_area_item login">
             <a class="login_link" href="#">Вход</a>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" placeholder="Электронная почта" name="e-mail">
-              <input type="password" placeholder="Пароль" name="password">
-              <input type="submit" class="login_btn btn" name="login" value="Войти">
-              <a class="login_form_link" href="#">Забыли пароль?</a>
-              <a class="login_form_link" href="#">Новая регистрация</a>
+              <input class="login_form" type="text" placeholder="Электронная почта" name="e-mail">
+              <input class="login_form" type="password" placeholder="Пароль" name="password">
+              <input class="login_form" type="submit" class="login_btn btn" name="login" value="Войти">
+              <a class="login_form login_form_link" href="#">Забыли пароль?</a>
+              <a class="login_form login_form_link" href="#">Новая регистрация</a>
             </form>
           </div>
-          <div class="basket">
+          <div class="user_area_item basket">
             <a class="basket_link" href="#">Корзина</a>
             <div class="basket_item">
               <div class="basket_container_top">
@@ -82,10 +84,10 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="contact">
-          <span class="time_work">С 10 до 20, ежедневно</span>
-          <span class="telephone">8 812 450-25-25</span>
+          <div class="contact">
+            <span class="time_work">С 10 до 20, ежедневно</span>
+            <span class="telephone">8 812 450-25-25</span>
+          </div>
         </div>
       </div>
     </header>
@@ -105,7 +107,8 @@
           </ul>
         </nav>
         <h1 class="catalog_h1">Сливочное мороженое</h1>
-        <form action="#" method="get">
+        <div class="test"></div>
+        <form class="form_catalog" action="#" method="get">
           <label for="sort_select">Сортировка</label>
           <select name="sort" id="sort_select">
             <option selected>по популярности</option>
@@ -336,6 +339,7 @@
         </section>
       </div>
     </footer>
+    </div>
   </body>
 
 </html>
