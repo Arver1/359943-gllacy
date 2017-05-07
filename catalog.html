@@ -7,32 +7,32 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
-  <body>
-     <div class="catalog_wrapper">
-    <header class="page_header">
-      <div class="container">
+  <body> <!--убрать обертку -->
+     <div class="page_wrapper">
+     <header class="page_header">
+      <div class="container clearfix">
         <div class="index_logo">
-          <a><img src="img/logo.png" width="154" height="64" alt="GllacyShop"></a>
+          <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="GllacyShop"></a>
         </div>
         <nav class="main_navigation">
           <ul class="main_menu">
-            <li class="main_menu_item">
-              <a href="#">Каталог</a>
+            <li class="main_menu_item active">
+              <a class="link_active">Каталог</a>
               <ul class="dropdown_menu">
                 <li class="dropdown_menu_novelty">
-                  <a href="#">Новинки</a>
+                  <a class="dropdown_menu_link novelty" href="#">Новинки</a>
                 </li>
                 <li>
-                  <a href="catalog.html">Сливочное</a>
+                  <a class="dropdown_menu_link" href="catalog.html">Сливочное</a>
                 </li>
                 <li class="dropdown_menu_item">
-                  <a href="#">Щербеты</a>
+                  <a class="dropdown_menu_link" href="#">Щербеты</a>
                 </li>
                 <li class="dropdown_menu_item">
-                  <a href="#">Фруктовый лед</a>
+                  <a class="dropdown_menu_link" href="#">Фруктовый лед</a>
                 </li>
                 <li class="dropdown_menu_item">
-                  <a href="#">Мелорин</a>
+                  <a class="dropdown_menu_link" href="#">Мелорин</a>
                 </li>
               </ul>
             </li>
@@ -40,47 +40,49 @@
               <a href="#">Доставка и оплата</a>
             </li>
             <li class="main_menu_item">
-              <a href="#">О компании</a>
+              <a href="#">О Компании</a>
             </li>
           </ul>
         </nav>
         <div class="user_area">
-          <div class="user_area_item search">
-            <a class="search_link" href="#">Поиск</a>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <input class="search_request" type="text" placeholder="Что ищем?" name="search_request">
-            </form>
-          </div>
-          <div class="user_area_item login">
-            <a class="login_link" href="#">Вход</a>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <input class="login_form" type="text" placeholder="Электронная почта" name="e-mail">
-              <input class="login_form" type="password" placeholder="Пароль" name="password">
-              <input class="login_form" type="submit" class="login_btn btn" name="login" value="Войти">
-              <a class="login_form login_form_link" href="#">Забыли пароль?</a>
-              <a class="login_form login_form_link" href="#">Новая регистрация</a>
-            </form>
-          </div>
-          <div class="user_area_item basket">
-            <a class="basket_link" href="#">Корзина</a>
-            <div class="basket_item">
-              <div class="basket_container_top">
-                <span class="basket_item_close">Удалить</span>
-                <span class="basket_name_product">Пломбир с апельсиновым джемом</span>
-                <span class="basket_calculate_product">
-                  1,5кг x <span class="basket_calculate_price">200 руб.</span>
-                </span>
-                <span class="backet_price_product">300 руб.</span>
-                <span class="basket_item_close">Удалить</span>
-                <span class="basket_name_product">Клубничный пломбир с присыпкой из белого шоколада</span>
-                <span class="basket_calculate_product">
-                  1,5кг x <span class="basket_calculate_price">300 руб.</span>
-                </span>
-                <span class="backet_price_product">450 руб.</span>
-              </div>
-              <div class="basket_container_bottom">
-                <span class="basket_total_price">Итого: 750 руб.</span>
-                <a class="basket_item_link" href="#">Оформить заказ</a>
+          <div class="user_area_section clearfix">
+            <div class="search">
+              <a class="search_link" href="catalog.html">Поиск</a>
+              <form class="search_link_form" action="https://echo.htmlacademy.ru" method="get">
+                <input class="search_request" type="text" placeholder="Что ищем?" name="search_request">
+              </form>
+            </div>
+            <div class="login">
+              <a class="login_link" href="#">Вход</a>
+              <form class="login_link_form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="login_form" type="text" placeholder="Электронная почта" name="e-mail">
+                <input class="login_form" type="password" placeholder="Пароль" name="password">
+                <a class="login_form_btn" href="#">Войти</a>
+                <a class="login_form_link" href="#">Забыли пароль?</a>
+                <a class="login_form_link" href="#">Новая регистрация</a>
+              </form>
+            </div>
+            <div class="basket">
+              <a class="basket_link" href="#">2 товара</a>
+              <div class="basket_item">
+                <div class="basket_container_top">
+                  <span class="basket_item_close">Удалить</span>
+                  <span class="basket_name_product">Пломбир с апельсиновым джемом</span>
+                  <span class="basket_calculate_product">
+                    1,5кг x <span class="basket_calculate_price">200 руб.</span>
+                  </span>
+                  <span class="backet_price_product">300 руб.</span>
+                  <span class="basket_item_close">Удалить</span>
+                  <span class="basket_name_product">Клубничный пломбир с присыпкой из белого шоколада</span>
+                  <span class="basket_calculate_product">
+                    1,5кг x <span class="basket_calculate_price">300 руб.</span>
+                  </span>
+                  <span class="backet_price_product">450 руб.</span>
+                </div>
+                <div class="basket_container_bottom">
+                  <span class="basket_total_price">Итого: 750 руб.</span>
+                  <a class="basket_item_link" href="#">Оформить заказ</a>
+                </div>
               </div>
             </div>
           </div>
@@ -107,7 +109,7 @@
           </ul>
         </nav>
         <h1 class="catalog_h1">Сливочное мороженое</h1>
-        <div class="test"></div>
+
         <form class="form_catalog" action="#" method="get">
           <label for="sort_select">Сортировка</label>
           <select name="sort" id="sort_select">
