@@ -173,13 +173,16 @@
   .dropdown_menu:hover  {
     display: block;
   }
+  .dropdown_menu li:hover:not(.dropdown_menu_novelty):not(.dropdown_menu_sub_active)  {
     background-color: rgb(251, 222, 215);
     cursor: pointer;
   }
+  .dropdown_menu li:active:not(.dropdown_menu_novelty):not(.dropdown_menu_sub_active)  {
     background-color: rgb(246, 181, 165);
     cursor: pointer;
     border: none;
   }
+  .dropdown_menu_sub_active  {
     background-color: rgb(208, 112, 88);
   }
   .user_area  {
