@@ -1111,7 +1111,6 @@
     display: block;
   }
   .feedback_form  {
-    position: relative;
     display: block;
     position: fixed;
     top: 25%;
@@ -1169,7 +1168,6 @@
     border: 1px solid rgb(178, 178, 178);
     border-radius: 5px;
     background-color: #ffffff;
-    background-color: #ffffff;
     color: #999999;
     font-size: 16px;
     line-height: 24px;
@@ -1181,7 +1179,6 @@
   .feedback_textarea  {
     display: inline-block;
     vertical-align: top;
-    background-color: red;
     width: 410px;
     height: 144px;
     border: 1px solid rgb(178, 178, 178);
