@@ -242,7 +242,7 @@
     z-index: 10;
   }
   .search_request  {
-    dislplay: block;
+    display: block;
     width: 294px;
     padding-top: 8px;
     padding-left: 14px;
@@ -357,7 +357,7 @@
     margin-right: 20px;
   }
   .login_form_btn:hover  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image:linear-gradient(to top,#ec6e5d,#f58669);
     font-size: 18px;
@@ -371,7 +371,7 @@
     text-shadow: 0px 2px 5px rgba(160,32,11,0.76);
   }
   .login_form_btn:active  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image: linear-gradient(to top,#f26843,#e74a35);
     font-size: 18px;
@@ -490,7 +490,7 @@
     display: none;
   }
   .add_both  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image: linear-gradient(to top,#e74a35,#f26843);
     font-size: 32px;
@@ -504,7 +504,7 @@
     text-shadow: 0px 2px 5px rgba(160,32,11,0.76);
   }
   .add_both:hover  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image:linear-gradient(to top,#ec6e5d,#f58669);
     font-size: 32px;
@@ -518,14 +518,14 @@
     text-shadow: 0px 2px 5px rgba(160,32,11,0.76);
   }
   .add_both:active  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image: linear-gradient(to top,#f26843,#e74a35);
     font-size: 32px;
     line-height: 44px;
     font-weight: bold;
     font-family: "Roboto","Arial",sans-serif;
-    padding: 12px 40px 14px 41px;
+    padding: 12px 41px 14px 41px;
     text-decoration: none;
     border-radius: 32px;
     box-shadow: inset 0px 2px 2px 0px #ac1000;
@@ -633,7 +633,7 @@
     margin-bottom: 45px;
   }
   .action_get  {
-    dislplay: inline-block;
+    display: inline-block;
     float: right;
     color: #ffffff;
     background-image: linear-gradient(to top,#e74a35,#f26843);
@@ -648,26 +648,26 @@
     margin-right: 1px;
   }
   .action_get:hover  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image:linear-gradient(to top,#ec6e5d,#f58669);
     font-size: 18px;
     line-height: 24px;
     font-family: "Roboto","Arial",sans-serif;
-    padding: 9px 22px 13px 22px;
+    padding: 10px 23px 11px 20px;
     text-decoration: none;
     border-radius: 32px;
     box-shadow: 0px 2px 2px 0px #ac1000;
     text-shadow: 0px 2px 5px rgba(160,32,11,0.76);
   }
   .action_get:active  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image: linear-gradient(to top,#f26843,#e74a35);
     font-size: 18px;
     line-height: 24px;
     font-family: "Roboto","Arial",sans-serif;
-    padding: 9px 21px 13px 23px;
+    padding: 10px 23px 11px 20px;
     text-decoration: none;
     border-radius: 32px;
     box-shadow: inset 0px 2px 2px 0px #ac1000;
@@ -1065,7 +1065,7 @@
     text-shadow: 0px 2px 5px rgba(160,32,11,0.76);
   }
   .btn_feedback:hover  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image:linear-gradient(to top,#ec6e5d,#f58669);
     font-size: 18px;
@@ -1080,7 +1080,7 @@
     text-shadow: 0px 2px 5px rgba(160,32,11,0.76);
   }
   .btn_feedback:active  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image: linear-gradient(to top,#f26843,#e74a35);
     font-size: 18px;
@@ -1110,22 +1110,23 @@
     padding: 15px 25px 27px 24px;
     z-index: 200;
   }
-  .feedback_form  .feedback_close  {
-    position: absolute;
-    width: 18px;
-    height: 17px;
-    top: 15px;
-    right: 15px;
-    font-size: 0;
-    background: url("../img/modal_close_badge.png") no-repeat;
-    background-size: cover;
-  }
   .feedback_form span  {
     color: #323232;
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
     font-family: "Roboto","Arial",sans-serif;
+  }
+  .feedback_form .close  {
+    display: inline-block;
+    position: absolute;
+    border: none;
+    font-size: 0;
+    background: #f8f7f4 url("../img/modal_close_badge.png");
+    width: 18px;
+    height: 17px;
+    top: 15px;
+    right: 15px;
   }
   input[id="feed_name_id"]  {
     display: inline-block;
@@ -1202,7 +1203,7 @@
   }
 
   .feedback_form input[value="Отправить"]:hover  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image:linear-gradient(to top,#ec6e5d,#f58669);
     font-size: 18px;
@@ -1217,7 +1218,7 @@
     cursor: pointer;
   }
   .feedback_form input[value="Отправить"]:active  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image: linear-gradient(to top,#f26843,#e74a35);
     font-size: 18px;
@@ -1591,7 +1592,7 @@
     margin-bottom: 10px;
   }
   .basket_item_link:hover  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image:linear-gradient(to top,#ec6e5d,#f58669);
     font-size: 18px;
@@ -1604,7 +1605,7 @@
     box-shadow: 0px 2px 2px 0px #ac1000;
   }
   .basket_item_link:active  {
-    dislplay: inline-block;
+    display: inline-block;
     color: #ffffff;
     background-image: linear-gradient(to top,#f26843,#e74a35);
     font-size: 18px;
@@ -1826,6 +1827,7 @@
     padding-top: 6px;
     padding-right: 15px;
     padding-bottom: 6px;
+    cursor: pointer;
   }
   .select_form option  {
     font-size: 14px;
@@ -1880,6 +1882,7 @@
     position: absolute;
     top: calc(50% - 10px);
     border-radius: 50%;
+    cursor: pointer;
   }
   .min  {
     left: calc(16px + 19px);
@@ -2107,6 +2110,7 @@
     padding-right: 26px;
     padding-bottom: 6px;
     border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
   }
   .form_catalog input[type="submit"]:hover  {
     display: inline-block;
