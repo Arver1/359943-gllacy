@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <input class="slider_toggle" type="radio" name="toggle" id="btn_1" checked>
@@ -191,31 +191,32 @@
           </div>
         </div>
         <section class="map">
-          <div class="container">
-            <div class="map_pin">
-            </div>
-            <div class="feedback">
-              <span class="feedback_contact">
-                Адрес главного офиса<br>
-                и офлайн магазина:
-              </span>
-              <span class="feedback_contact">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-              <span class="feedback_contact">Для заказов по телефону:</span>
-              <span class="feedback_contact">8 812 450-25-25<br>
-                <span class="feedback_contact_inner">(c 10 до 20 ежедневно)</span>
-              </span>
-              <a class="btn_feedback" href="#">Форма обратной связи</a>
-              <div class="modal_overlay">
-                <div class="feedback_form">
-                  <span>Мы обязательно вам ответим!</span>
-                  <input class="close" type="button" value="Закрыть">
-                  <form action="https://echo.htmlacademy.ru" method="post">
-                    <input type="text" name="feedback_form_name" value="Как вас зовут?" id="feed_name_id">
-                    <input type="text" name="feedback_form_e-mail" value="Ваша почта для ответа?" id="feed_mail_id">
-                    <textarea class="feedback_textarea" rows="5" cols="20">Напишите что-нибудь...</textarea>
-                    <input type="submit" value="Отправить">
-                  </form>
-                </div>
+          <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6uQ7A7Z" width="1200" height="430" frameborder="0"></iframe>
+          <div class="map_pin">
+          </div>
+          <div class="feedback">
+            <span class="feedback_contact">
+              Адрес главного офиса<br>
+              и офлайн магазина:
+            </span>
+            <span class="feedback_contact">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+            <span class="feedback_contact">Для заказов по телефону:</span>
+            <span class="feedback_contact">8 812 450-25-25<br>
+              <span class="feedback_contact_inner">(c 10 до 20 ежедневно)</span>
+            </span>
+            <a class="btn_feedback" href="form.html">Форма обратной связи</a>
+            <div class="modal_overlay">
+              <div class="feedback_form">
+                <span>Мы обязательно вам ответим!</span>
+                <input class="close" type="button" value="Закрыть">
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <input type="text" name="feedback_form_name" id="feed_name_id">
+                  <label for="feed_name_id">Как вас зовут?</label>
+                  <input type="text" name="feedback_form_e-mail" value="Ваша почта для ответа?" id="feed_mail_id">
+                  <label for="feed_mail_id">Ваша почта для ответа?</label>
+                  <textarea class="feedback_textarea" rows="5" cols="20">Напишите что-нибудь...</textarea>
+                  <input type="submit" value="Отправить">
+                </form>
               </div>
             </div>
           </div>
@@ -242,6 +243,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
 
