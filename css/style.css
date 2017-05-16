@@ -122,7 +122,6 @@
     padding-bottom: 11px;
     margin-left: 7px;
     margin-right: 7px;
-
   }
   .dropdown_menu li:not(.dropdown_menu_novelty)  {
     padding-top: 8px;
@@ -149,7 +148,6 @@
   .main_menu_item:hover > .dropdown_menu {
     display: block;
   }
-
   .main_menu_item:hover > .dropdown_link {
     background-color: #ffffff;
     color: #323232;
@@ -221,7 +219,7 @@
     position: absolute;
     top: 37px;
     left: -308px;
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 18px 15px;
     background-color: rgb(248, 247, 244);
     border-radius: 6px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -241,6 +239,40 @@
     border: 1px solid rgb(211, 211, 210);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
+    margin-bottom: 2px;
+  }
+  .search_request:hover  {
+    display: block;
+    width: 292px;
+    padding-top: 8px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+  }
+  .search_request:focus  {
+    display: block;
+    width: 292px;
+    padding-top: 8px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+    border: 2px solid rgb(143, 189, 236);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    margin-bottom: 0px;
   }
   .login_link::before  {
     content: "";
@@ -304,7 +336,6 @@
     content: "";
     display: table;
     clear: both;
-
   }
   .login_form  {
     display: block;
@@ -320,13 +351,40 @@
     border: 1px solid rgb(211, 211, 210);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-  }
-  .login_form[type="text"]  {
     margin-bottom: 20px;
   }
-  .login_form[type="password"]  {
-    margin-bottom: 20px;
-
+  .login_form:hover  {
+    display: block;
+    width: 223px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 14px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 18px;
+  }
+  .login_form:focus  {
+    display: block;
+    width: 223px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 14px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+    border: 2px solid rgb(143, 189, 236);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 18px;
+    outline: none;
   }
   .login_form_btn  {
     display: inline-block;
@@ -384,7 +442,6 @@
     font-weight: 400;
     font-family: "Roboto","Arial",sans-serif;
   }
-
   .login_form_link::after  {
     content: "";
     display: block;
@@ -552,14 +609,13 @@
   #btn_1:checked  ~ .page_wrapper label[for="btn_1"],
   #btn_2:checked  ~ .page_wrapper label[for="btn_2"],
   #btn_3:checked  ~ .page_wrapper label[for="btn_3"]  {
-     background: #ffffff;
-   }
+    background: #ffffff;
+  }
   #btn_1:checked  ~ .page_wrapper #slide_1,
   #btn_2:checked  ~ .page_wrapper #slide_2,
   #btn_3:checked  ~ .page_wrapper #slide_3  {
     display: block;
-   }
-
+  }
   label[for="btn_1"],
   label[for="btn_2"],
   label[for="btn_3"]  {
@@ -746,7 +802,7 @@
     border-radius: 32px;
     box-shadow: 0px 2px 2px 0px rgba(172,16,0,0.64);
     margin-right: 1px;
-     z-index: 40;
+    z-index: 40;
   }
   .product_link_btn:hover  {
     display: none;
@@ -834,14 +890,8 @@
   }
   .features_container  {
     background: #ebe0c6 url("../img/pattern_wafer.jpg") repeat;
-    padding: 25px 33px 25px 20px;
+    padding: 25px 30px 21px 20px;
     border-radius: 15px;
-
-  }
-  .features_container::after  {
-    content: "";
-    display: table;
-    clear: both;
   }
   .features_name  {
     position: relative;
@@ -854,30 +904,36 @@
     padding: 0;
   }
   .features_item  {
-    float: left;
-  }
-  .features_about  {
+    list-style: none;
+    padding: 0;
     margin: 0;
+  }
+  .features_item li  {
+    margin-bottom: 2px;
+  }
+  .features_item li::after  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .features_item p  {
+    width: 480px;
+    float: left;
+    margin: 0;
+    padding-top: 21px;
+    padding-left: 56px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     font-family: "Roboto","Arial",sans-serif;
     color: #323232;
-  }
-  .features_about:first-of-type  {
     position: relative;
-    width: 478px;
-    float: left;
-    margin-right: 25px;
-    padding-left: 55px;
-    padding-top: 21px;
   }
-  .features_about:last-of-type  {
-    position: relative;
-    width: 470px;
+  .features_item p:nth-of-type(2n)  {
+    width: 472px;
+    padding-left: 64px;
+    margin-right: 0;
     float: right;
-    padding-left: 65px;
-    padding-top: 21px;
   }
   .features_1::before  {
     content: "";
@@ -939,7 +995,6 @@
     font-weight: 500;
     font-family: "Roboto","Arial",sans-serif;
     color: #323232;
-
   }
   .news_text  {
     margin: 0;
@@ -1020,6 +1075,43 @@
     float: left;
     margin-right: 12px;
   }
+  input[name="subscription_e-mail"]:hover  {
+    display: inline-block;
+    vertical-align: top;
+    height: 41px;
+    width: 353px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #999999;
+    padding-top: 0;
+    padding-left: 13px;
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-right: 10px;
+  }
+  input[name="subscription_e-mail"]:focus  {
+    display: inline-block;
+    vertical-align: top;
+    height: 41px;
+    width: 353px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #999999;
+    padding-top: 0;
+    padding-left: 13px;
+    border: 2px solid rgb(143, 189, 236);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-right: 10px;
+    outline: none;
+  }
   .subscription_substrate input[type="submit"]  {
     background-color: #e84d37;
     border: none;
@@ -1063,7 +1155,6 @@
     box-shadow: inset 0px 2px 2px 0px #ac1000;
     text-shadow: 0px 2px 5px rgba(148,39,24,0.76);
   }
-
   .news_and_subscription::after  {
     content: "";
     display: table;
@@ -1191,11 +1282,14 @@
     animation-name: bounce;
     animation-duration: 0.8s;
   }
+  .input_wrapper  {
+    position: relative;
+  }
   label[for="feed_name_id"]  {
     display: block;
-    position: relative;
+    position: absolute;
     left: 14px;
-    bottom: 51px;
+    top: 30px;
     color: #999999;
     font-size: 16px;
     line-height: 24px;
@@ -1203,13 +1297,65 @@
     font-weight: 400;
     transition: all .5s ease;
   }
-  input[id="feed_name_id"]:focus + label[for="feed_name_id"]  {
-    color: #5b9ddf;
-    font-size: 11px;
-    line-height: 13px;
+  label[for="feed_mail_id"]  {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    color: #999999;
+    font-size: 16px;
+    line-height: 24px;
     font-family: "Roboto","Arial",sans-serif;
     font-weight: 400;
-    transform: translateY(-32px);
+    transition: all .5s ease;
+  }
+  label[for="e-mail_id"]  {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    color: #999999;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 400;
+    transition: all .5s ease;
+  }
+  label[for="login_form_mail"]  {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 400;
+    transition: all .5s ease;
+  }
+  label[for="login_form_pass"]  {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 400;
+    transition: all .5s ease;
+  }
+  label[for="search_id"]  {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 400;
+    transition: all .5s ease;
   }
   .feedback_form span  {
     color: #323232;
@@ -1303,6 +1449,112 @@
     padding-top: 6px;
     padding-left: 13px;
   }
+  input[id="feed_mail_id"]:hover  {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    width: 252px;
+    height: 35px;
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #999999;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+    padding-top: 4px;
+    padding-left: 11px;
+  }
+  input[id="feed_mail_id"]:focus  {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    width: 252px;
+    height: 35px;
+    border: 2px solid rgb(143, 189, 236);
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #999999;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+    padding-top: 4px;
+    padding-left: 11px;
+    outline: none;
+  }
+  input[id="feed_name_id"]:focus ~ label[for="feed_name_id"],
+  input[id="feed_name_id"]:not(:focus):valid ~ label[for="feed_name_id"]  {
+    top: 4px;
+    color: #5b9ddf;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+  }
+  input[id="feed_mail_id"]:focus ~ label[for="feed_mail_id"],
+  input[id="feed_mail_id"]:not(:focus):valid ~ label[for="feed_mail_id"]  {
+    top: -15px;
+    color: #5b9ddf;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+  }
+  input[id="e-mail_id"]:focus ~ label[for="e-mail_id"],
+  input[id="e-mail_id"]:not(:focus):valid ~ label[for="e-mail_id"]  {
+    top: -15px;
+    color: #5b9ddf;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+  }
+  input[id="login_form_mail"]:focus ~ label[for="login_form_mail"],
+  input[id="login_form_mail"]:not(:focus):valid ~ label[for="login_form_mail"]  {
+    top: -15px;
+    color: #5b9ddf;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+  }
+  input[id="login_form_pass"]:focus ~ label[for="login_form_pass"],
+  input[id="login_form_pass"]:not(:focus):valid ~ label[for="login_form_pass"]  {
+    top: -15px;
+    color: #5b9ddf;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+  }
+  input[id="search_id"]:focus ~ label[for="search_id"],
+  input[id="search_id"]:not(:focus):valid ~ label[for="search_id"]  {
+    top: -15px;
+    color: #5b9ddf;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    font-family: "Roboto","Arial",sans-serif;
+  }
+  input[id="feed_name_id"]:not(:focus):valid ~ label[for="feed_name_id"],
+  input[id="feed_mail_id"]:not(:focus):valid ~ label[for="feed_mail_id"],
+  input[id="e-mail_id"]:not(:focus):valid ~ label[for="e-mail_id"],
+  input[id="login_form_mail"]:not(:focus):valid ~ label[for="login_form_mail"],
+  input[id="login_form_pass"]:not(:focus):valid ~ label[for="login_form_pass"],
+  input[id="search_id"]:not(:focus):valid ~ label[for="search_id"]  {
+    color: #999999;
+  }
+  input[id="feed_name_id"]:valid,
+  input[id="feed_mail_id"]:valid,
+  input[id="e-mail_id"]:valid,
+  input[id="login_form_mail"]:valid ,
+  input[id="login_form_pass"]:valid,
+  input[id="search_id"]:valid  {
+    font-weight: bold;
+    color: #323232;
+  }
   .feedback_textarea  {
     display: inline-block;
     vertical-align: top;
@@ -1343,7 +1595,6 @@
     display: table;
     clear: both;
   }
-
   .feedback_form input[value="Отправить"]:hover  {
     display: inline-block;
     vertical-align: top;
@@ -1449,9 +1700,7 @@
   .btn_footer:active  {
     border-color:rgba(255,255,255,0.7);
     box-shadow: inset 0px 2px 1px 0px #888888;
-
   }
-
   .btn_footer  {
     width: 30px;
     height: 30px;
@@ -1469,7 +1718,6 @@
   .twit  {
     background: url("../img/twitter_badge.png") no-repeat 50% 50%;
   }
-
   .inst  {
     background: url("../img/instagram_badge.png") no-repeat 50% 50%;
   }
@@ -1509,7 +1757,7 @@
     text-decoration: none;
     border-bottom: 1px solid rgba(255,188,158,0.2);
   }
-  .footer_nav_item:active {
+  .footer_nav_item:active  {
     color: #ffbc9e;
     font-size: 13px;
     font-weight: 400;
@@ -1520,7 +1768,6 @@
     text-decoration: none;
     border-bottom: 1px solid rgba(255,188,158,0.2);
   }
-
   .footer_nav_item:nth-of-type(1)::before  {
     content: "";
     display: block;
@@ -1539,7 +1786,6 @@
   .footer_nav_item:nth-of-type(3)  {
     margin-right: 40px;
   }
-
   .btn_footer_copyright::before  {
     content: "";
     display: block;
@@ -1751,7 +1997,6 @@
     padding-top: 14px;
     font-size: 0;
     text-align: right;
-
   }
   .basket_total_price  {
     display: block;
@@ -1805,7 +2050,6 @@
     border-radius: 32px;
     box-shadow: inset 0px 2px 2px 0px #ac1000;
   }
-
   .breadcrumbs ul  {
     margin: 0;
     padding: 0;
@@ -1993,6 +2237,7 @@
     float: left;
     padding: 0;
     margin: 0;
+    position: relative;
   }
   .form_select legend  {
     padding-left: 17px;
@@ -2003,8 +2248,35 @@
     font-weight: 500;
     font-family: "Roboto","Arial",sans-serif;
   }
-  .select_form  {
+  .select_wrapper  {
     position: relative;
+    border-radius: 30px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .select_wrapper::after {
+    content: "";
+    display: block;
+    border: 4px solid transparent;
+    border-top: 6px solid white;
+    font-size: 12px;
+    position: absolute;
+    right: 16px;
+    bottom: 10px;
+    cursor: pointer;
+  }
+  .select_wrapper:hover::after  {
+    content: "";
+    display: block;
+    border: 4px solid transparent;
+    border-top: 6px solid black;
+    font-size: 12px;
+    position: absolute;
+    right: 16px;
+    bottom: 10px;
+    cursor: pointer;
+  }
+  .select_form  {
     font-size: 16px;
     font-family: "Roboto","Arial",sans-serif;
     font-weight: 500;
@@ -2012,11 +2284,19 @@
     color: #ffffff;
     background-color: rgba(248,247,244,0.2);
     border-radius: 30px;
-    padding-left: 11px;
-    padding-top: 6px;
-    padding-right: 15px;
-    padding-bottom: 6px;
+    padding-left: 15px;
+    padding-top: 9px;
+    padding-right: 31px;
+    padding-bottom: 7px;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance:none;
+    appearance: none;
+  }
+  .select_form::-ms-expand  {
+    display: none;
   }
   .select_form option  {
     font-size: 14px;
@@ -2025,7 +2305,7 @@
     line-height: 16px;
     color: #323232;
   }
-  .select_form:hover  {
+  .select_wrapper:hover .select_form  {
     color: #323232;
     background-color: #ffffff;
     font-size: 16px;
@@ -2113,9 +2393,18 @@
     color: #ffffff;
     border-radius: 30px;
     padding-left: 14px;
-    padding-top: 10px;
-    padding-bottom: 7px;
+    padding-right: 14px;
+    padding-top: 9px;
+    padding-bottom: 5px;
     background-color: rgba(248,247,244,0.2);
+  }
+  .value_0,
+  .value_9,
+  .value_29,
+  .value_30  {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 4px;
   }
   .value_0,
   .value_9  {
@@ -2209,7 +2498,7 @@
     padding-left: 14px;
     padding-top: 9px;
     padding-right: 16px;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     background-color: rgba(248,247,244,0.2);
   }
   .form_sort_filler  {
@@ -2238,6 +2527,20 @@
   }
   .filler_syrup  {
     margin-right: 15px;
+  }
+  input[value="chocolate"]:disabled  + .filler_chocolate::before,
+  input[value="sugar"]:disabled  + .filler_sugar::before,
+  input[value="fruit"]:disabled  + .filler_fruit::before,
+  input[value="syrup"]:disabled  + .filler_syrup::before,
+  input[value="jam"]:disabled  + .filler_jam::before  {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(255,255,255,0.4);
+    top: 0px;
+    left: 2px;
+    border-radius: 3px;
   }
   .filler_chocolate::before,
   .filler_sugar::before,
@@ -2283,9 +2586,27 @@
   .filler_fruit,
   .filler_syrup,
   .filler_jam  {
+    display: inline-block;
+    margin-bottom: 4px;
     position: relative;
     padding-left: 34px;
     cursor: pointer;
+  }
+  input[value="chocolate"]:checked:disabled + .filler_chocolate::after,
+  input[value="sugar"]:checked:disabled + .filler_sugar::after,
+  input[value="fruit"]:checked:disabled + .filler_fruit::after,
+  input[value="syrup"]:checked:disabled + .filler_syrup::after,
+  input[value="jam"]:checked:disabled + .filler_jam::after  {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    border-left: 2px solid rgba(255,255,255,0.4);
+    width: 9px;
+    height: 5px;
+    top: 4px;
+    left: 7px;
+    background-color: transparent;
+    transform: rotate(-45deg);
   }
   input[value="chocolate"]:checked + .filler_chocolate::after,
   input[value="sugar"]:checked + .filler_sugar::after,
